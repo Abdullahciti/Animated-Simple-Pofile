@@ -35,20 +35,41 @@ header{
     min-height: 80px;
     align-items: center;
 }
+@media (max-width:767px){
+  header{
+    padding:8px 15px;
+  }
+}
 header .logo{
     color: white;
     font-size: 25px;
+}
+@media (max-width:767px){
+  header .logo{
+    font-size: 15px;
+  }
 }
 header .logo span{
     color: yellow;
     font-size: 30px;
     padding-left: 10px;
 }
+@media (max-width:767px){
+  header .logo span{
+    font-size: 15px;
+  }
+}
 header ul li{
     padding: 0 10px;
     color: white;
     font-size: 19px;
     font-weight: 500;
+}
+@media (max-width:767px){
+  header ul li{
+    padding: 0 6px;
+    font-size:15px;
+  }
 }
 header ul li:hover{
     color: #FFACAC;
@@ -74,22 +95,26 @@ header .search-box i{
     transform: translateY(-50%);
     font-size: 13px;
 }
-@media (max-width:767px){
-  .landing{
-    width:500px;
-  }
-}
 .landing{
     position: relative;
     width: 100%;
     height: calc(100vh - 100px);
 }
-
+@media (max-width:767px){
+  .landing{
+    width:500px;
+  }
+}
 .landing .container{
     padding: 0 15px;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr
+}
+@media (max-width:767px){
+  .landing .container{
+    grid-template-columns: 1fr
+  }
 }
 .landing .container .text{
     display: flex;
@@ -101,12 +126,27 @@ header .search-box i{
     font-size: 30px;
     
 }
+@media (max-width:767px){
+  .container .text p{
+    font-size:20px;
+  }
+}
 .landing .container .text h1{
     font-size: 90px;
+}
+@media (max-width:767px){
+  .container .text h1{
+    font-size:50px;
+  }
 }
 .landing .container .text span{
     font-size: 50px;
     position: relative;
+}
+@media (max-width:767px){
+  .container .text span{
+    font-size:30px;
+  }
 }
 .container .text span::after{
     content: "|";
@@ -140,6 +180,11 @@ header .search-box i{
 }
 .landing .container .image{
     height: calc(100vh - 100px);
+}
+@media (max-width:767px){
+  .container .image{
+    display:none;
+  }
 }
 .landing .container .image img{
     width: 100%;
