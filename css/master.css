@@ -78,6 +78,11 @@ header ul li:hover{
 header .search-box{
     position: relative;
 }
+@media (max-width:767px){
+  .search-box{
+    display:none;
+  }
+}
 header .search-box input{
     padding: 15px 20px 15px 30px;
     font-size: 16px;
@@ -217,7 +222,11 @@ a {
     overflow: hidden;
     z-index: -1;
 }
-
+@media (max-width:767px){
+  .background{
+    width:500px;
+  }
+}
 .background span {
     width: 20vmin;
     height: 20vmin;
