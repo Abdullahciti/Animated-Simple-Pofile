@@ -44,20 +44,10 @@ header .logo{
     color: white;
     font-size: 25px;
 }
-@media (max-width:767px){
-  header .logo{
-    font-size: 15px;
-  }
-}
 header .logo span{
     color: yellow;
     font-size: 30px;
     padding-left: 10px;
-}
-@media (max-width:767px){
-  header .logo span{
-    font-size: 15px;
-  }
 }
 header ul li{
     padding: 0 10px;
@@ -146,7 +136,10 @@ header .search-box i{
 }
 @media (max-width:767px){
   .container .text h1{
-    font-size:27px;
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    font-size:22px;
   }
 }
 .landing .container .text span{
