@@ -24,6 +24,7 @@ ul{
 .github:hover  {
     color: #4078c0; /* GitHub blue color */
   }
+  
 body{
     position: relative;
 }
@@ -72,6 +73,11 @@ header .search-box i{
     top: 50%;
     transform: translateY(-50%);
     font-size: 13px;
+}
+@media (max-width:767px){
+  .landing{
+    width:500px;
+  }
 }
 .landing{
     position: relative;
