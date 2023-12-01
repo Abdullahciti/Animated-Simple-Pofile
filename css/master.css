@@ -139,13 +139,12 @@ header .search-box i{
 }
 @keyframes writing {
     0%{
+        width:0;
         border-right: 1px solid transparent;
-    }
-    50%{
-        border-right: 1px solid transparent;
-        /* border-right: 1px solid white; */
     }
     100%{
+        width:100%;
+        border-right: 1px solid transparent;
         /* border-right: 1px solid white; */
     }
 }
