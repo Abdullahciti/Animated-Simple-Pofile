@@ -396,22 +396,14 @@ a {
 }
 /* End Background from https://wweb.dev/  */
 /* Start Animation */
-/* @keyframes typing-animation{
-    from{
-        width: 0;
-    }
-    to{
-        width: 400px;
-    }
-} */
-/* @keyframes move {
+@keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 } */
-/* End Animation */
+/* End Animation
 
-@media (max-width:991px) {
+@media (max-width:767px) {
     h1{
         font-size: 16px !important;
     }
