@@ -78,7 +78,7 @@ header ul li:hover{
 header .search-box{
     position: relative;
 }
-@media (max-width:767px){
+@media (max-width:990px){
   .search-box{
     display:none;
   }
@@ -114,11 +114,11 @@ header .search-box i{
     padding: 0 15px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
 }
 @media (max-width:767px){
   .landing .container{
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 }
 .landing .container .text{
@@ -126,6 +126,11 @@ header .search-box i{
     flex-direction: column;
     padding: 50px;
     color: white;
+}
+@media (max-width:767px){
+  .container .text{
+    padding: 20px;
+  }
 }
 .landing .container .text p{
     font-size: 30px;
@@ -141,7 +146,7 @@ header .search-box i{
 }
 @media (max-width:767px){
   .container .text h1{
-    font-size:50px;
+    font-size:27px;
   }
 }
 .landing .container .text span{
@@ -150,7 +155,7 @@ header .search-box i{
 }
 @media (max-width:767px){
   .container .text span{
-    font-size:30px;
+    font-size:22px;
   }
 }
 .container .text span::after{
@@ -182,6 +187,12 @@ header .search-box i{
     color: white;
     background: linear-gradient(to right, aquamarine, rgb(77, 77, 218), #b570d4, rgb(167, 66, 83));
     border: none;
+}
+@media (max-width:767px){
+  .container .text input{
+    padding: 10px;
+    font-size:15px;
+  }
 }
 .landing .container .image{
     height: calc(100vh - 100px);
