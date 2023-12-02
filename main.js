@@ -1,27 +1,24 @@
-// let area = document.querySelector(".area");
+let div = document.querySelector(".my-div");
+let span = document.querySelector(".my-span");
+let text = "Frontend-Developer.";
 
-// let mySpan = document.querySelector(".area span");
+function hi() {
+  let index = 0;
+  let direction = 1; // 1 for forward, -1 for backward
 
+  function updateText() {
+    span.textContent = text.slice(0, index);
+    index += direction;
 
-// window.addEventListener("load", () => {
-//     window.setInterval(() => {
-//         mySpan.textContent ="Frontend-Developper."
-//     }, 1000);
-// })
+    if (index >= text.length || index < 0) {
+      setTimeout(() => {
+        direction *= -1; // Reverse the direction when reaching the end or beginning
+        index += 2 * direction; // Adjust index to avoid skipping characters
+      }, 1000);
+    }
+  }
 
-let area = document.querySelector(".area");
-let mySpan = document.querySelector(".area span");
+  let myInterval = setInterval(updateText, 150);
+}
 
-window.addEventListener("load", () => {
-    const text = "Frontend-Developer.";
-    let index = 0;
-
-    const intervalId = window.setInterval(() => {
-        mySpan.textContent = text.slice(0, index);
-        index++;
-
-        if (index > text.length) {
-            clearInterval(intervalId);
-        }
-    }, 100);
-});
+hi();
