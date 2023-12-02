@@ -25,6 +25,7 @@ ul{
     color: #4078c0; /* GitHub blue color */
   }
 body{
+    font-family: tahoma, Arial;
     position: relative;
     height: 100vh;
 }
