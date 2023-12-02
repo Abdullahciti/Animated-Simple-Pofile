@@ -25,9 +25,9 @@ ul{
     color: #4078c0; /* GitHub blue color */
   }
 body{
-    font-family: tahoma, Arial;
     position: relative;
     height: 100vh;
+    font-family: Tahoma, Arial;
 }
 header{
     display: flex;
@@ -113,40 +113,35 @@ header .search-box i{
 .landing .container .text h1{
     font-size: 90px;
 }
-.landing .container .text .area{
-    font-size: 50px;
+.landing .container .text .my-div{
+    font-size: 30px;
     position: relative;
 }
-.landing .container .text .area span{
+.landing .container .text .my-div .my-span{
     font-size: 50px;
-    animation-name: writing;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    padding-top: 4px;
-    animation: writing 1s infinite steps(2, start);
+    font-weight: 700;
+    position: relative;
+    border-right: 2px solid white;
+    animation: animate infinite steps(20) 0.8s;
 }
-@media (max-width:991px) {
-    .landong .container .text h1{
-      font-size: 18px !important;
-    }
-    .landing .container .text .area{
-        font-size: 15px;
-    }
-    .landing .container .text .area span{
-        font-size: 15px;
-        border-right: 1px solid white;
-        padding-right:1px;
-    }
-}
-@keyframes writing {
+@keyframes animate {
     0%{
-        width:0;
-        border-right: 1px solid transparent;
+        border-right: 2px solid transparent;
     }
     100%{
-        width:100%;
-        border-right: 1px solid transparent;
-        /* border-right: 1px solid white; */
+        border-right: 2px solid white;
+    }
+}
+@media (max-width:991px) {
+    .landing .container{
+        grid-template-columns: 1fr;
+    }
+    .landing .container .text .my-div{
+        font-size: 15px;
+    }
+    .landing .container .text .my-div .my-span{
+        font-size: 20px;
+        padding-right:1px;
     }
 }
 .landing .container .text .inputs{
@@ -399,14 +394,22 @@ a {
 }
 /* End Background from https://wweb.dev/  */
 /* Start Animation */
+/* @keyframes typing-animation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 400px;
+    }
+} */
 @keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
     }
-} */
-/* End Animation
+}
+/* End Animation */
 
-@media (max-width:767px) {
+@media (max-width:991px) {
     h1{
         font-size: 16px !important;
     }
